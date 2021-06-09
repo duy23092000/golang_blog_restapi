@@ -28,6 +28,8 @@ func (a *App) Initialize(config *config.Config) {
 		config.DB.Username,
 		config.DB.Name,
 		config.DB.Password)
+		
+	fmt.Println("Connecting to database...")
 
 	db, err := gorm.Open(config.DB.Dialect, dbURI)
 	if err != nil {

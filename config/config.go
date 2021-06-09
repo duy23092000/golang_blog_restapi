@@ -1,7 +1,7 @@
 package config
 
 type Config struct {
-	DB *DBConfig
+	DB   *DBConfig
 	Port string
 }
 
@@ -26,5 +26,6 @@ func GetConfig() *Config {
 			Name:     "go_tutorial",
 			Charset:  "utf8",
 		},
+		Port: ":8080",
 	}
 }
